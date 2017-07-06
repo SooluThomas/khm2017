@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KHM 2017</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Slabo+27px" rel="stylesheet">
+<!-- COUNTDOWN -->
+	<script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script>
+	<script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script>
+	<script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script>
+	<meta name="robots" content="noindex">
+	<link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+	<link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+	<link rel="canonical" href="https://codepen.io/arianalynn/pen/qZdZpr" />
+	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			overflow-x: hidden;
+		}
+		body { 
+			background: url(./images/bgimg.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.navbar {
+			background-color: transparent;
+			border-color: transparent;
+			margin: 15px auto;
+			width: 900px;
+	        z-index: 9999;
+	        border: 0; 
+	        font-size: 16px !important;
+	        line-height: 1.42857143 !important;
+	        font-family: 'Acme', sans-serif;
+	        color: white;
+		}
+		.navbar-brand {
+			height: 50px
+		}
+		.nav >li >a {
+			padding-top: 50px;
+			padding-bottom: 5px;
+		}
+		.navbar-toggle {
+			padding: 30px;
+			/*margin: 25px 15px 25px 0;*/
+		}
+		.container-fluid {
+			background-color: transparent;
+			border-color: transparent;
+		}
+		#page1 { 
+			border-radius: 25px;
+			width: 900px;
+			margin: 45px auto; 
+			padding: 20px; 
+			background: white; 
+			-moz-box-shadow: 0 0 20px black; 
+			-webkit-box-shadow: 0 0 20px black; 
+			box-shadow: 0 0 20px black; 
+		}	
+
+		.para1 { 
+			font-family: 'Pacifico', cursive;
+			font-size: 26px;
+		}
+		.para2 {
+			font-family: 'Slabo 27px', serif;
+			font-size: 24px;
+			color: grey;
+		}
+		.btn {
+			background-color: #F5E134;
+			color: #FFFFFF;
+			font-family: 'Slabo 27px', serif;
+			font-size: 40px;
+		}
+	</style>
+	<style class="cp-pen-styles">
+		/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+		.countdown {
+			font-size:5vw;
+			color:#fff;
+			margin:0 1vw;
+			padding:2.1vw 2.1vw;
+			display:inline-block;
+			width:8vw;
+			border-radius:10px;
+			text-align:center;
+			background:rgba(0,0,0,0.75);
+			box-shadow:inset 0 -5px 0 rgba(0,0,0,0.5)
+		}
+		.countdown:after {
+			font-size:1.5vw;
+			display:block;
+			margin:3px 0 -1px;
+			opacity:.8
+		}
+		.countdown:nth-of-type(1):after{content:"days"}
+		.countdown:nth-of-type(2):after{content:"hrs"}
+		.countdown:nth-of-type(3):after{content:"min"}
+		.countdown:nth-of-type(4):after{content:"sec"}
+		.count {
+			position: relative;
+		}
+		.count:before {
+			position:absolute;
+			margin-top:-7vw;
+			text-align:center;
+			width:100%;
+			left:0;
+			font-size:3.25vw;
+			color:white;
+		}
+		.count:after {
+			position:absolute;
+			text-align:center;
+			width:100%;
+			left:0;
+			font-size:1.4vw;
+			color:white;
+			bottom:-4vw;
+		}
+		h2 {
+			width:80vw;
+			font-size:6vw;
+			text-align:center;
+		}
+	</style> 
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="./index.html"><img src="./images/logo-white.png" width="130px" height="70px"></a>
+		</div>
+		<ul class="nav navbar-nav navbar-right navbar-center">
+			<li><a href="./about.html"><b>ABOUT</b></a></li>
+			<li><a href="./speakers.html"><b>SPEAKERS</b></a></li>
+			<li><a href="./workshops.html"><b>WORKSHOPS</b></a></li>
+			<li><a href="./contact.html"><b>CONTACT US</b></a></li>
+		</ul>
+	</div>
+</nav>
+<div id="page1">
+	<div id="count" align="center">
+	  	<span class="countdown"></span>
+	  	<span class="countdown"></span>
+	  	<span class="countdown"></span>
+	  	<span class="countdown"></span>
+	</div>
+	<p class="para1" align="center"><br>“Coming together is beginning,<br>Staying together is progress and working together is success!”</p>
+	<p class="para2" align="center"><br>Come &amp; Join us @ VJCET on 21-23rd this year<br></p>
+	<div align="center"><button class="btn btn-default" align="center">REGISTER NOW</button></div>
+</div>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+<script>
+	var s = document.getElementsByTagName('span');
+	var oneDay = 24 * 60 * 60 * 1000;
+	var firstDate = new Date("July 21, 2017 08:00:00");var secondDate = new Date();
+	var days = (firstDate.getTime() - secondDate.getTime()) / (oneDay);
+	var hrs = (days - Math.floor(days)) * 24;
+	var min = (hrs - Math.floor(hrs)) * 60;
+	s[0].innerHTML = Math.floor(days);
+	s[1].innerHTML = Math.floor(hrs);
+	s[2].innerHTML = Math.floor(min);
+	s[3].innerHTML = Math.floor((min - Math.floor(min)) * 60);
+	var i = setInterval(function() {n()}, 1000)
+	function f(d, x) {s[d].innerHTML = x;s[d - 1].innerHTML = Number(s[d - 1].innerHTML) - 1;}
+	function n() {s[3].innerHTML = Number(s[3].innerHTML) - 1;
+	if (s[3].innerHTML == -1) {f(3, 59)
+	if (s[2].innerHTML == -1) {f(2, 59)
+	if (s[1].innerHTML == -1) {f(1, 23)
+	}}}if(s[0].innerHTML <= -1) {clearInterval(i);document.getElementsByTagName('div')[0].innerHTML='<h2>The event is over.</h2>'}}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KHM 2017</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Slabo+27px" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			overflow-x: hidden;
+		}
+		body { 
+			background: url(./images/bgimg.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.navbar {
+			background-color: transparent;
+			border-color: transparent;
+			margin: 15px auto;
+			width: 900px;
+	        z-index: 9999;
+	        border: 0; 
+	        font-size: 16px !important;
+	        line-height: 1.42857143 !important;
+	        font-family: 'Acme', sans-serif;
+	        color: white;
+		}
+		.navbar-brand {
+			height: 50px
+		}
+		.nav >li >a {
+			padding-top: 50px;
+			padding-bottom: 5px;
+		}
+		.navbar-toggle {
+			padding: 30px;
+			/*margin: 25px 15px 25px 0;*/
+		}
+		.container-fluid {
+			background-color: transparent;
+			border-color: transparent;
+		}
+		#page1 { 
+			border-radius: 25px;
+			width: 900px;
+			margin: 45px auto; 
+			padding: 42px; 
+			height: 500px;
+			background: white; 
+			-moz-box-shadow: 0 0 20px black; 
+			-webkit-box-shadow: 0 0 20px black; 
+			box-shadow: 0 0 20px black; 
+		}	
+
+		.para1 { 
+			font-family: 'Slabo 27px', serif;
+			font-size: 35px;
+		}
+		.para2 {
+			font-family: 'Slabo 27px', serif;
+			font-size: 26px;
+			color: #000000;
+		}
+		.para3 { 
+			font-family: 'Pacifico', cursive;
+			font-size: 26px;
+		}
+		.btn {
+			background-color: #F5E134;
+			color: #FFFFFF;
+			font-family: 'Slabo 27px', serif;
+			font-size: 40px;
+		}
+		        /* carousel */
+		#quote-carousel 
+		{
+			width: 850px;
+			margin: 45px auto; 
+			padding: 42px; 
+			margin-top: 30px;
+		}
+
+		/* Control buttons  */
+		#quote-carousel .carousel-control
+		{
+			background: none;
+			color: #222;
+			font-size: 2.3em;
+			text-shadow: none;
+			margin-top: 30px;
+		}
+		/* Previous button  */
+		#quote-carousel .carousel-control.left 
+		{
+			left: -12px;
+		}
+		/* Next button  */
+		#quote-carousel .carousel-control.right 
+		{
+			right: -12px !important;
+		}
+		/* Changes the position of the indicators */
+		#quote-carousel .carousel-indicators 
+		{
+			right: 50%;
+			top: auto;
+			bottom: 0px;
+			margin-right: -19px;
+		}
+		/* Changes the color of the indicators */
+		#quote-carousel .carousel-indicators li 
+		{
+			background: #c0c0c0;
+		}
+		#quote-carousel .carousel-indicators .active 
+		{
+			background: #333333;
+		}
+		#quote-carousel img
+		{
+			width: 250px;
+			height: 100px;
+		}
+		/* End carousel */
+
+		.item blockquote {
+			border-left: none; 
+			margin: 0;
+		}
+
+		.item blockquote img {
+			margin-bottom: 10px;
+		}
+
+		.item blockquote p:before {
+			content: "\f10d";
+			font-family: 'Fontawesome';
+			float: left;
+			margin-right: 10px;
+		}
+		/*MEDIA QUERIES*/
+		/* Small devices (tablets, 768px and up) */
+		@media (min-width: 768px) { 
+		#quote-carousel 
+		{
+		  margin-bottom: 0;
+		  padding: 0 40px 30px 40px;
+		}
+		}
+
+		/* Small devices (tablets, up to 768px) */
+		@media (max-width: 768px) { 
+
+		/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+		#quote-carousel .carousel-indicators {
+		    bottom: -20px !important;  
+		}
+		#quote-carousel .carousel-indicators li {
+		    display: inline-block;
+		    margin: 0px 5px;
+		    width: 15px;
+		    height: 15px;
+		}
+		#quote-carousel .carousel-indicators li.active {
+		    margin: 0px 5px;
+		    width: 20px;
+		    height: 20px;
+		}
+		}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="./index.html"><img src="./images/logo-white.png" width="130px" height="70px"></a>
+		</div>
+		<ul class="nav navbar-nav navbar-right navbar-center">
+			<li><a href="./about.html"><b>ABOUT</b></a></li>
+			<li><a href="./speakers.html"><b>SPEAKERS</b></a></li>
+			<li><a href="./workshops.html"><b>WORKSHOPS</b></a></li>
+			<li><a href="./contact.html"><b>CONTACT US</b></a></li>
+		</ul>
+	</div>
+</nav>
+<div id="page1" align="center">
+	<div align="center"><h3 class="para1"><b>WORKSHOPS</b></h3></div>
+	<div class='row'>
+    <div class=''>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://clipartfans.com/resource/human-clipart/human-clipart-4.png" style="width: 200px;height:200px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <small>Someone famous</small><br>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://clipartfans.com/resource/human-clipart/human-clipart-4.png" style="width: 200px;height:200px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <small>Someone famous</small><br>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://clipartfans.com/resource/human-clipart/human-clipart-4.png" style="width: 200px;height:200px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <small>Someone famous</small><br>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control center"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="glyphicon glyphicon-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
